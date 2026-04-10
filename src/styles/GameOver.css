@@ -1,0 +1,98 @@
+.gameover-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 10, 20, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1rem;
+}
+
+.gameover-box {
+  background-color: var(--card-bg);
+  border: var(--border-thick);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+}
+
+.gameover-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.gameover-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--red);
+  -webkit-text-stroke: 0.5px #1c1c1c;
+  margin-bottom: 0.5rem;
+}
+
+.gameover-sub {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+
+.gameover-scores {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.go-score-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.go-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.go-value {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.go-value.gold {
+  color: var(--dark-yellow);
+}
+
+.restart-btn {
+  background-color: var(--red);
+  color: #fff;
+  border: 3px solid #1c1c1c;
+  border-radius: 6px;
+  padding: 0.65rem 2.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.restart-btn:hover {
+  background-color: var(--dark-red);
+  transform: translateY(-2px);
+}
+
+.restart-btn:active {
+  transform: translateY(0);
+}
