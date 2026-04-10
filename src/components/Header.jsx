@@ -4,7 +4,7 @@ function Header({ score, bestScore }) {
   return (
     <header className="header">
       <div className="header-title">
-        <span className="title-poke">Poké</span>
+        <span className="title-poke">Pokémon</span>
         <span className="title-memory">Memory</span>
       </div>
       <div className="scoreboard">
