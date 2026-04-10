@@ -1,0 +1,61 @@
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+/* Loading */
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  gap: 1.25rem;
+}
+
+.pokeball-spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #e3350d 50%, #fff 50%);
+  border: 4px solid #1c1c1c;
+  position: relative;
+  animation: spin 0.9s linear infinite;
+}
+
+.pokeball-spinner::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  right: -4px;
+  height: 4px;
+  background-color: #1c1c1c;
+  transform: translateY(-50%);
+}
+
+.pokeball-spinner::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid #1c1c1c;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
